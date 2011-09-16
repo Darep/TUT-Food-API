@@ -41,7 +41,6 @@ $juvenes_ravintolat = array(
 	)
 );
 
-
 foreach ($juvenes_ravintolat as $k => $v) {
 
 	$lista[$k] = array();
@@ -72,6 +71,9 @@ foreach ($juvenes_ravintolat as $k => $v) {
 		$rivi = preg_replace("/^Ranskalaiset perunat(.*?)$/i", "", $rivi);
 		
 		if (trim($rivi) != "" and !in_array($rivi, $lista[$k])) {
+			// fix for json_encode()
+			$rivi = utf8_encode($rivi);
+			
 			$lista[$k]['ruoka'][] = $rivi;
 			print "Lisattiin ruokarivi: $rivi\n";
 		}
@@ -99,4 +101,3 @@ foreach ($juvenes_ravintolat as $k => $v) {
 		$lista[$k]['auki'] = implode(", ", $lista[$k]['auki']);
 	}
 }
-?>
