@@ -8,7 +8,7 @@ define('JSON_FILE', 'listat');
 define('LOG_FILE', 'listat.log');
 
 // check if the json is too old
-$today_at_one = date('Y-m-d 01:00:00');
+$today_at_one = strtotime(date('Y-m-d 01:00:00'));
 $time_modified = filemtime(JSON_FILE);
 
 if ($time_modified < $today_at_one) {
@@ -28,7 +28,7 @@ if ($time_modified < $today_at_one) {
 	fclose($logfile_handle);
 	
 	$data = array(
-		'time_updated' => $time_modified,
+		'time_updated' => time(),
 		'menus' => $menus
 	);
 	
