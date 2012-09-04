@@ -4,21 +4,32 @@ Simple wrapper for scraping/fetching the restaurant information & food menus of 
 
 ## API
 
-### `GET /`
+### `GET /` <small>(proposal)</small>
 
 Returns an array of all the restaurants and their menus.
 
 ---
 
-### `GET /{restaurant}`
+### `GET /restaurants` <small>(proposal)</small>
 
-Returns the information of specified restaurant
+Returns a list of the restaurant IDs.
 
 ---
 
-### `GET /{restaurant}/food`
+### `GET /{restaurant}` <small>(proposal)</small>
+
+- `string restaurant` -- unique restaurant ID
+
+Returns the information of specified restaurant.
+
+---
+
+### `GET /{restaurant}/menu` <small>(proposal)</small>
+
+- `string restaurant` -- unique restaurant ID
 
 Returns the menu for the specified restaurant.
+
 
 ## License
 
