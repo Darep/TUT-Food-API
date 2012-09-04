@@ -20,27 +20,28 @@ Returns an array of all the restaurants and their menus.
 ```json
 [
     {
-        "edison": {
-            "name": "Edison",
-            "open_hours": "",
-            "menu": [
-                ""
-            ]
-        },
-        "newton": {
-            "name": "Newton",
-            "open_hours": "",
-            "menu": [
-                ""
-            ]
-        },
-        "zip": {
-            "name": "Zip",
-            "open_hours": "",
-            "menu": [
-                ""
-            ]
-        }
+        "id": "edison",
+        "name": "Edison",
+        "open_hours": "",
+        "menu": [
+            ""
+        ]
+    },
+    {
+        "id": "newton",
+        "name": "Newton",
+        "open_hours": "",
+        "menu": [
+            ""
+        ]
+    },
+    {
+        "id": "zip",
+        "name": "Zip",
+        "open_hours": "",
+        "menu": [
+            ""
+        ]
     }
 ]
 ```
