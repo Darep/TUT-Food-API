@@ -14,10 +14,10 @@ Returns an array of all the restaurants and their menus.
 
 ##### Example response
 
-    HTTP/1.1 200 OK
-    Content-type: application/json
-
 ```json
+HTTP/1.1 200 OK
+Content-type: application/json
+
 [
     {
         "id": "edison",
@@ -53,6 +53,14 @@ Returns an array of all the restaurants and their menus.
 
 Returns a list of the restaurant IDs.
 
+##### Example request
+
+    $ curl -i "http://tut-food-api.local/restaurants"
+
+##### Example response
+
+    TODO: response
+
 ---
 
 ### `GET /{restaurant_id}` <small>(proposal)</small>
@@ -64,13 +72,38 @@ Returns the information of specified restaurant.
 `string restaurant`
 :   Unique restaurant ID
 
+##### Example request
+
+    $ curl -i "http://tut-food-api.local/zip"
+
+##### Example response
+
+    TODO: response
+
 ---
 
 ### `GET /{restaurant_id}/menu` <small>(proposal)</small>
 
-- `string restaurant` -- unique restaurant ID
-
 Returns the menu for the specified restaurant.
+
+##### Parameters
+
+`string restaurant`
+:   Unique restaurant ID
+
+##### Example request
+
+    $ curl -i "http://tut-food-api.local/zip/menu"
+
+##### Example response
+
+    TODO: response
+
+---
+
+### Notes
+
+- Restaurant ID can't be "restaurants"
 
 
 ## License
