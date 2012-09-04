@@ -1,0 +1,17 @@
+{
+    "hash": "3550b1535f28df9ddcb138a2f05bf55f",
+    "packages": [
+        {
+            "package": "predis/predis",
+            "version": "v0.7.3"
+        }
+    ],
+    "packages-dev": null,
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": [
+
+    ]
+}
